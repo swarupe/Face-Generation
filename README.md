@@ -31,23 +31,16 @@ In this project, I defined and trained a DCGAN on a CelebA dataset. The goal of 
 ### Dataset
  * [CelebFaces Attributes Dataset (CelebA)](https://s3.amazonaws.com/video.udacity-data.com/topher/2018/November/5be7eb6f_processed-celeba-small/processed-celeba-small.zip)
 
-### Model - Discriminator
-| Layer | Input Dimension | Output Dimension | Batch Normalization|
-|-------|-----------------|------------------|-------------|
-|Conv1|3|64|False|
-|Conv2|64|128|True|
-|Conv3|128|256|True|
-|Conv4|256|512|True|
-|FC|2048|1|False|
 
-### Model - Generator
-| Layer | Input Dimension | Output Dimension | Batch Normalization|
-|-------|-----------------|------------------|-------------|
-|FC|100|2048|False|
-|Deconv1|512|256|True|
-|Deconv2|256|128|True|
-|Deconv3|128|64|True|
-|Deconv4|64|3|False|
+### List of Hyperparameters used:
+
+* Batch Size = **64**
+* Generated Image Size = **32 x 32**  
+* Eength of latent vector z = **100**  
+* Number of Filters in Discriminator's first hidden layer = **32**
+* Number of Filters in Generator's first hidden layer = **32**
+* Initial Learning Rate, [beta1, beta2] = **0.0002, [0.5, 0.999]**
+* Number of Epochs = **50**
 
 ## Conclusion
 DCGAN is one of the most popular and succesful network design for GAN. It mainly composes of convolution layers without max pooling or fully connected layers. It uses strided convolutions and transposed convolutions for the downsampling and the upsampling respectively.
