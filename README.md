@@ -40,7 +40,7 @@ In this project, I defined and trained a DCGAN on a CelebA dataset. The goal of 
 * Number of Filters in Discriminator's first hidden layer = **32**
 * Number of Filters in Generator's first hidden layer = **32**
 * Initial Learning Rate, [beta1, beta2] = **0.0002, [0.5, 0.999]**
-* Number of Epochs = **50**
+* Number of Epochs = **10**
 
 ## Conclusion
 DCGAN is one of the most popular and succesful network design for GAN. It mainly composes of convolution layers without max pooling or fully connected layers. It uses strided convolutions and transposed convolutions for the downsampling and the upsampling respectively.
