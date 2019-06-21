@@ -34,13 +34,13 @@ In this project, I defined and trained a DCGAN on a CelebA dataset. The goal of 
 
 ### List of Hyperparameters used:
 
-* Batch Size = **64**
+* Batch Size = **32**
 * Generated Image Size = **32 x 32**  
 * Eength of latent vector z = **100**  
 * Number of Filters in Discriminator's first hidden layer = **32**
 * Number of Filters in Generator's first hidden layer = **32**
-* Initial Learning Rate, [beta1, beta2] = **0.0002, [0.5, 0.999]**
-* Number of Epochs = **10**
+* Initial Learning Rate, [beta1, beta2] = **0.0005, [0.2, 0.999]**
+* Number of Epochs = **20**
 
 ## Conclusion
 DCGAN is one of the most popular and succesful network design for GAN. It mainly composes of convolution layers without max pooling or fully connected layers. It uses strided convolutions and transposed convolutions for the downsampling and the upsampling respectively.
